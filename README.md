@@ -5,18 +5,10 @@ Authors
 
 Paper
 
-Nicola Lercari
-
-Arianna Campiani
-
-Ashley Lingle
+Nicola Lercari,Arianna Campiani, Ashley Lingle
 
 
 MatLAB Code
 
-Moataz Dahabra
-
-Christopher Reps
-
-Jad Aboulhosn
+Moataz Dahabra, Christopher Reps, Jad Aboulhosn
 
