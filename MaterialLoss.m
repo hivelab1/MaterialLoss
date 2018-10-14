@@ -72,7 +72,7 @@ for k = 1 : length(dirList)
     filteredDistancesAndUncertainty = distanceUncertaintyList(isfinite(distanceUncertaintyList(:,1)),:);
     testDistancesAndUncertainty = distanceUncertaintyList(isfinite(distanceUncertaintyList(:,1)),:);
     
-    % This value must be callibrated such that the M3C2 output is coherent. It must be tweaked to capture the material loss properly and will vary
+    % This value must be calibrated such that the average material loss calculation output is coherent. It must be tweaked to capture the material loss properly and will vary
 	% on the sparsity of heterogenity of the cloud itself. You can use this value for now and adjust in increments of +- 0.01 to attain proper center.
     threshold = 0.021;
    
