@@ -1,0 +1,11 @@
+The following high-level pseudocode was created as a reader’s guide for non-programmers to understand the functionalities of the MATLAB routine we created to compute material loss using the M3C2 method into a single numeric value per each comparison. Readers with a stronger technical background will find more nuanced information on the functionalities of the routine directly in the heavily-commented source code.
+
+1) Load input text file with format:
+//X,Y,Z,Npoints_cloud1,Npoints_cloud2,STD_cloud1,STD_cloud2,significant change,distance uncertainty,M3C2 distance,Nx,Ny,Nz
+919984
+1042.822265625000,1194.622070312500,1010.627746582031,1158.000000,957.000000,0.004416,0.005624,1.000000,0.004358,-0.009361,-0.050169,-0.896264,0.440674
+Where the first line is the header, the second line is the number of rows, and the third line is a repeating data series matching the header.
+2) Collect all Distance and Certainty fields.
+3) Compute points where Distance < Threshold
+4) Eject uncertain points where Uncertainty < Calibrated Percentage
+5) Transpose data into new file and save.
